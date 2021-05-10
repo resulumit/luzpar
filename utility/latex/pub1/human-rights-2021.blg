@@ -1,9 +1,0 @@
-[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
-[0] Config.pm:315> INFO - Logfile is 'human-rights-2021.blg'
-[250] biber-MSWIN64:330> INFO - === 
-[312] Biber.pm:415> INFO - Reading 'human-rights-2021.bcf'
-[700] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[717] Utils.pm:395> WARN - The file 'human-rights-2021.bcf' does not contain any citations!
-[753] bbl.pm:651> INFO - Writing 'human-rights-2021.bbl' with encoding 'UTF-8'
-[753] bbl.pm:754> INFO - Output to human-rights-2021.bbl
-[754] Biber.pm:128> INFO - WARNINGS: 1
