@@ -1,0 +1,17 @@
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'jjd_publicaton2018.blg'
+[98] biber-MSWIN64:330> INFO - === 
+[123] Biber.pm:415> INFO - Reading 'jjd_publicaton2018.bcf'
+[257] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[258] Biber.pm:952> INFO - Found 1 citekeys in bib section 1
+[258] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[281] Biber.pm:4334> INFO - Processing section 1
+[296] Biber.pm:4523> INFO - Looking for bibtex format file 'references.bib' for section 1
+[302] bibtex.pm:1682> INFO - LaTeX decoding ...
+[307] bibtex.pm:1494> INFO - Found BibTeX data source 'references.bib'
+[340] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[340] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[340] Biber.pm:4162> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'en-GB'
+[340] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-GB'
+[342] bbl.pm:651> INFO - Writing 'jjd_publicaton2018.bbl' with encoding 'UTF-8'
+[342] bbl.pm:754> INFO - Output to jjd_publicaton2018.bbl
