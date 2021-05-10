@@ -6,7 +6,7 @@ publication: ""
 date: "2021-05-02"
 url_pdf: https://parliament-luzland.netlify.app/files/human-rights-2021.pdf
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/WzfqobnrSVc)'
+  caption: 'Image credit: [Gayatri Malhotra @ **Unsplash**](https://unsplash.com/photos/WzfqobnrSVc)'
   focal_point: ""
   preview_only: false
 publication_types: ["1"]
