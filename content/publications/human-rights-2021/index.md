@@ -1,19 +1,18 @@
 ---
-title: "Human Rights in Luzland"
+title: "Parliamentary Staff: Employment and Expenditures"
 authors:
 - admin
 publication: ""
-date: "2021-05-02"
-url_pdf: https://parliament-luzland.netlify.app/files/human-rights-2021.pdf
+date: "2021-02-14"
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/WzfqobnrSVc)'
+  caption: 'Image credit: [Austin Distel @ **Unsplash**](https://unsplash.com/photos/gUIJ0YszPig)'
   focal_point: ""
   preview_only: false
 publication_types: ["1"]
 categories: 
 - Report
-- Rights
-- Luzland
+- Staff
+- Parliament
 ---
 
 ## About the report
