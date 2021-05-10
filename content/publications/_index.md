@@ -3,6 +3,6 @@ cms_exclude: true
 header:
   caption: ""
   image: ""
-title: My Publications
+title: Parliamentary Publications
 view: 4
 ---
