@@ -3,7 +3,7 @@ widget: hero
 headless: true
 active: true
 weight: 10
-title: Welcome PL
+title: Welcome
 design:
   background:
     gradient_end: "Blue"
