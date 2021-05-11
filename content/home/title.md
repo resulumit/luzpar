@@ -21,6 +21,6 @@ It includes fabricated data on the imaginary Parliament of Luzland --- such as  
 
 Luzland is imagined to be a federal republic, made up of four [states](states/), each with an equal number of constituencies.
 
-Hence the website includes a lot of data.
+Hence the website provides the workshop with plenty of data, stable structure, and an ethical playground.
 
-Happy harvesting!
+Happy harvesting! 
