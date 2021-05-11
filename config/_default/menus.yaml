@@ -7,12 +7,15 @@ main:
   - name: Home
     url: '#hero'
     weight: 10
-  - name: Members
-    url: 'members/'
+  - name: States
+    url: 'states/'
     weight: 20
   - name: Constituencies
     url: 'constituencies/'
     weight: 30
+  - name: Members
+    url: 'members/'
+    weight: 40
   - name: Documents
     url: 'documents/'
-    weight: 40
+    weight: 50
