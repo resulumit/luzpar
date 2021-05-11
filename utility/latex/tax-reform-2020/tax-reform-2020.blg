@@ -1,9 +1,0 @@
-[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
-[0] Config.pm:315> INFO - Logfile is 'tax-reform-2020.blg'
-[114] biber-MSWIN64:330> INFO - === 
-[135] Biber.pm:415> INFO - Reading 'tax-reform-2020.bcf'
-[261] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[267] Utils.pm:395> WARN - The file 'tax-reform-2020.bcf' does not contain any citations!
-[280] bbl.pm:651> INFO - Writing 'tax-reform-2020.bbl' with encoding 'UTF-8'
-[280] bbl.pm:754> INFO - Output to tax-reform-2020.bbl
-[280] Biber.pm:128> INFO - WARNINGS: 1
