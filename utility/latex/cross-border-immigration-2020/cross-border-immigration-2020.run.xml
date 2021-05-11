@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>greenhouse-gas-emissions-2021.bcf</file>
+      <file>cross-border-immigration-2020.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>greenhouse-gas-emissions-2021.bbl</file>
+      <file>cross-border-immigration-2020.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -71,19 +71,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>greenhouse-gas-emissions-2021</infile>
+      <infile>cross-border-immigration-2020</infile>
     </cmdline>
     <input>
-      <file>greenhouse-gas-emissions-2021.bcf</file>
+      <file>cross-border-immigration-2020.bcf</file>
     </input>
     <output>
-      <file>greenhouse-gas-emissions-2021.bbl</file>
+      <file>cross-border-immigration-2020.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>greenhouse-gas-emissions-2021.bbl</file>
+      <file>cross-border-immigration-2020.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>greenhouse-gas-emissions-2021.bcf</file>
+      <file>cross-border-immigration-2020.bcf</file>
     </requires>
     <requires type="editable">
       <file>references.bib</file>

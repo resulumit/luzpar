@@ -4,6 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2020-03-30"
+url_pdf: https://parliament-luzland.netlify.app/files/cross-border-immigration-2020.pdf
 image:
   caption: 'Image credit: [Katie Moum @ **Unsplash**](https://unsplash.com/photos/7XGtYefMXiQ)'
   focal_point: ""

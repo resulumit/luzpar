@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.5)  11 MAY 2021 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.5)  11 MAY 2021 11:54
 entering extended mode
-**./greenhouse-gas-emissions-2021.tex
-(greenhouse-gas-emissions-2021.tex
+**./cross-border-immigration-2020.tex
+(cross-border-immigration-2020.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03>
 ("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
@@ -714,26 +714,26 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'british'.
 
-(greenhouse-gas-emissions-2021.aux)
-\openout1 = `greenhouse-gas-emissions-2021.aux'.
+(cross-border-immigration-2020.aux)
+\openout1 = `cross-border-immigration-2020.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-Package hyperref Info: Link coloring ON on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+Package hyperref Info: Link coloring ON on input line 30.
 
 ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -747,9 +747,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count433
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
  ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count434
@@ -810,14 +810,14 @@ File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `greenhouse-gas-emissions-2021.bcf'.
+\openout3 = `cross-border-immigration-2020.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'greenhouse-gas-emissions-2021.bbl' found.
+Package biblatex Info: ... file 'cross-border-immigration-2020.bbl' found.
 
-(greenhouse-gas-emissions-2021.bbl)
-Package biblatex Info: Reference section=0 on input line 29.
-Package biblatex Info: Reference segment=0 on input line 29.
+(cross-border-immigration-2020.bbl)
+Package biblatex Info: Reference section=0 on input line 30.
+Package biblatex Info: Reference segment=0 on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -853,9 +853,6 @@ Package biblatex Info: Reference segment=0 on input line 29.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-LaTeX Warning: No \author given.
-
 [1
 
 {C:/Users/resuluy/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2
@@ -866,16 +863,16 @@ LaTeX Warning: No \author given.
 Package caption Warning: Unused \captionsetup[subfigure] on input line 9.
 See the caption package documentation for explanation.
 
-[8] (greenhouse-gas-emissions-2021.aux)
-Package logreq Info: Writing requests to 'greenhouse-gas-emissions-2021.run.xml
+[8] (cross-border-immigration-2020.aux)
+Package logreq Info: Writing requests to 'cross-border-immigration-2020.run.xml
 '.
-\openout1 = `greenhouse-gas-emissions-2021.run.xml'.
+\openout1 = `cross-border-immigration-2020.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  17627 strings out of 479799
  308994 string characters out of 2879547
- 1165801 words of memory out of 3000000
+ 1165790 words of memory out of 3000000
  34360 multiletter control sequences out of 15000+200000
  538345 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -883,7 +880,7 @@ Here is how much of TeX's memory you used:
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
 m Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on greenhouse-gas-emissions-2021.pdf (8 pages, 63873 bytes).
+Output written on cross-border-immigration-2020.pdf (8 pages, 62342 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  15 named destinations out of 1000 (max. 500000)
