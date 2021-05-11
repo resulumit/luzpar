@@ -17,8 +17,10 @@ design:
 
 This is a demonstration website, for [a workshop on automated web scraping](https://github.com/resulumit/scrp_workshop) --- by [Resul Umit](https://resulumit.com/).
 
-The website includes fabricated data on the imaginary Parliament of Luzland.
+It includes fabricated data on the imaginary Parliament of Luzland --- such as  [documents](documents/) in its recent history, election results in its one hundred [constituencies](constituencies/), and voting statistics of its as many [members](members/).
 
-Luzland is a federal republic, made up of four [states](states/). Each state includes 25 [constituencies](constituencies/), each represented by one member of parliament. Hence there are 100 [members](members/).
+Luzland is imagined to be a federal republic, made up of four [states](states/), each with an equal number of constituencies.
+
+Hence the website includes a lot of data.
 
 Happy harvesting!
