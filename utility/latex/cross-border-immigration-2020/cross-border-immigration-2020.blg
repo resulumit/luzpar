@@ -1,9 +1,0 @@
-[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
-[0] Config.pm:315> INFO - Logfile is 'cross-border-immigration-2020.blg'
-[315] biber-MSWIN64:330> INFO - === 
-[350] Biber.pm:415> INFO - Reading 'cross-border-immigration-2020.bcf'
-[577] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[588] Utils.pm:395> WARN - The file 'cross-border-immigration-2020.bcf' does not contain any citations!
-[616] bbl.pm:651> INFO - Writing 'cross-border-immigration-2020.bbl' with encoding 'UTF-8'
-[616] bbl.pm:754> INFO - Output to cross-border-immigration-2020.bbl
-[617] Biber.pm:128> INFO - WARNINGS: 1
