@@ -1,9 +1,10 @@
 ---
-title: "Parliamentary Questions in the 2019--2020 Legislative Term"
+title: "Parliamentary Questions in the 2019–2020 Legislative Term"
 authors:
 - admin
 publication: ""
 date: "2021-01-20"
+url_pdf: https://parliament-luzland.netlify.app/files/parliamentary-questions-2021.pdf
 image:
   caption: 'Image credit: [Aaron Burden @ **Unsplash**](https://unsplash.com/photos/xG8IQMqMITM)'
   focal_point: ""
