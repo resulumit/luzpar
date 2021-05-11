@@ -4,6 +4,8 @@ authors:
 - admin
 publication: ""
 date: "2019-05-07"
+url_pdf: https://parliament-luzland.netlify.app/files/crime-policing-2019.pdf
+
 image:
   caption: 'Image credit: [David von Diemar @ **Unsplash**](https://unsplash.com/photos/jM6Y2nhsAtk)'
   focal_point: ""
