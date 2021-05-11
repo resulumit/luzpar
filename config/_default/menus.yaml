@@ -13,6 +13,6 @@ main:
   - name: Constituencies
     url: 'constituencies/'
     weight: 30
-  - name: Publications
-    url: 'publications/'
+  - name: Documents
+    url: 'documents/'
     weight: 40
