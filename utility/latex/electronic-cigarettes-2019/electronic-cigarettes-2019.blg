@@ -1,0 +1,9 @@
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'electronic-cigarettes-2019.blg'
+[110] biber-MSWIN64:330> INFO - === 
+[135] Biber.pm:415> INFO - Reading 'electronic-cigarettes-2019.bcf'
+[296] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[303] Utils.pm:395> WARN - The file 'electronic-cigarettes-2019.bcf' does not contain any citations!
+[317] bbl.pm:651> INFO - Writing 'electronic-cigarettes-2019.bbl' with encoding 'UTF-8'
+[318] bbl.pm:754> INFO - Output to electronic-cigarettes-2019.bbl
+[318] Biber.pm:128> INFO - WARNINGS: 1

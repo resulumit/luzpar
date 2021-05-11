@@ -1,0 +1,9 @@
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'wood-burner-2019.blg'
+[108] biber-MSWIN64:330> INFO - === 
+[133] Biber.pm:415> INFO - Reading 'wood-burner-2019.bcf'
+[272] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[279] Utils.pm:395> WARN - The file 'wood-burner-2019.bcf' does not contain any citations!
+[296] bbl.pm:651> INFO - Writing 'wood-burner-2019.bbl' with encoding 'UTF-8'
+[297] bbl.pm:754> INFO - Output to wood-burner-2019.bbl
+[297] Biber.pm:128> INFO - WARNINGS: 1

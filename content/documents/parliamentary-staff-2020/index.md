@@ -4,6 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2020-02-14"
+url_pdf: https://parliament-luzland.netlify.app/files/parliamentary-staff-2020.pdf
 image:
   caption: 'Image credit: [Austin Distel @ **Unsplash**](https://unsplash.com/photos/gUIJ0YszPig)'
   focal_point: ""
