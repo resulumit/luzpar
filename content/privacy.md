@@ -9,5 +9,3 @@ header:
 share: false
 title: Privacy Policy
 ---
-
-...
