@@ -4,8 +4,8 @@ authors:
 - admin
 publication: ""
 date: "2020-12-12"
-image:
 url_pdf: https://parliament-luzland.netlify.app/files/tax-reform-2020.pdf
+image:
   caption: 'Image credit: [Kelly Sikkema @ **Unsplash**](https://unsplash.com/photos/tQQ4BwN_UFs)'
   focal_point: ""
   preview_only: false
