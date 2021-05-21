@@ -3,3 +3,4 @@ Disallow: /states/
 
 User-agent: *
 Allow: /
+Crawl-delay: 2
