@@ -23,4 +23,6 @@ Luzland is imagined to be a federal republic, made up of four [states](states/),
 
 Hence the website provides the workshop with plenty of data, stable structure, and an ethical playground.
 
+The website is powered by [Blogdown](https://github.com/rstudio/blogdown), [Hugo](https://gohugo.io/), and [Wowchemy](https://github.com/wowchemy) --- all free and open source tools to build websites.
+
 Happy harvesting! 
