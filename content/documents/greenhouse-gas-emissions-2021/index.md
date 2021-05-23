@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2021-01-31"
-url_pdf: https://parliament-luzland.netlify.app/files/greenhouse-gas-emissions-2021.pdf
+url_pdf: https://luzpar.netlify.app/files/greenhouse-gas-emissions-2021.pdf
 image:
   caption: 'Image credit: [Marcin Jozwiak @ **Unsplash**](https://unsplash.com/photos/T-eDxGcn-Ok)'
   focal_point: ""

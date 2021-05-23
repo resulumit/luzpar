@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2021-01-20"
-url_pdf: https://parliament-luzland.netlify.app/files/parliamentary-questions-2021.pdf
+url_pdf: https://luzpar.netlify.app/files/parliamentary-questions-2021.pdf
 image:
   caption: 'Image credit: [Aaron Burden @ **Unsplash**](https://unsplash.com/photos/xG8IQMqMITM)'
   focal_point: ""

@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2021-05-02"
-url_pdf: https://parliament-luzland.netlify.app/files/human-rights-2021.pdf
+url_pdf: https://luzpar.netlify.app/files/human-rights-2021.pdf
 image:
   caption: 'Image credit: [Gayatri Malhotra @ **Unsplash**](https://unsplash.com/photos/WzfqobnrSVc)'
   focal_point: ""

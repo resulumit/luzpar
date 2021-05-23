@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2020-01-12"
-url_pdf: https://parliament-luzland.netlify.app/files/healthcare-providers-2020.pdf
+url_pdf: https://luzpar.netlify.app/files/healthcare-providers-2020.pdf
 publication_types: ["0"]
 categories: 
 - Uncategorised 

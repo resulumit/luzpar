@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2021-04-14"
-url_pdf: https://parliament-luzland.netlify.app/files/climate-change-2021.pdf
+url_pdf: https://luzpar.netlify.app/files/climate-change-2021.pdf
 image:
   caption: 'Image credit: [Karsten Würth @ **Unsplash**](https://unsplash.com/photos/0w-uTa0Xz7w)'
   focal_point: ""

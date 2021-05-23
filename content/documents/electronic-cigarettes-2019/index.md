@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2019-03-01"
-url_pdf: https://parliament-luzland.netlify.app/files/electronic-cigarettes-2019.pdf
+url_pdf: https://luzpar.netlify.app/files/electronic-cigarettes-2019.pdf
 image:
   caption: 'Image credit: [Thomas Bjornstad @ **Unsplash**](https://unsplash.com/photos/YAjsL1KrbNo)'
   focal_point: ""

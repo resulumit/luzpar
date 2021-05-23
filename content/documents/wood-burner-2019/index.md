@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2019-09-17"
-url_pdf: https://parliament-luzland.netlify.app/files/wood-burner-2019.pdf
+url_pdf: https://luzpar.netlify.app/files/wood-burner-2019.pdf
 publication_types: ["0"]
 categories: 
 - Uncategorised 

@@ -4,7 +4,7 @@ authors:
 - admin
 publication: ""
 date: "2019-06-21"
-url_pdf: https://parliament-luzland.netlify.app/files/cyber-security-2019.pdf
+url_pdf: https://luzpar.netlify.app/files/cyber-security-2019.pdf
 image:
   caption: 'Image credit: [Joshua Woroniecki @ **Unsplash**](https://unsplash.com/photos/lzh3hPtJz9c)'
   focal_point: ""
