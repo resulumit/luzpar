@@ -2,5 +2,8 @@ User-agent: googlebot
 Disallow: /states/
 
 User-agent: *
+Disallow: /exercises/
+
+User-agent: *
 Allow: /
 Crawl-delay: 2
