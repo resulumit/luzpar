@@ -1,8 +1,3 @@
-# install the packages ----------------------------------------------------
-
-install.packages(c("rvest", "RSelenium", "robotstxt", "polite", "dplyr"))
-
-
 # load the packages -------------------------------------------------------
 
 library(rvest)
