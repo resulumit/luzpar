@@ -1,3 +1,12 @@
+# note --------------------------------------------------------------------
+
+# this script provides the solutions to exercises, or links to them,
+# for the workshop (https://github.com/resulumit/scrp_workshop) on 
+# web scraping with r, by resul umit
+
+# last updated on: 25.02.2022
+
+
 # load the packages -------------------------------------------------------
 
 library(rvest)
@@ -7,39 +16,45 @@ library(polite)
 library(dplyr)
 
 
-# exercises 1-3 -----------------------------------------------------------
+# exercise 1 --------------------------------------------------------------
 
 # get the protocol for the guardian via R
 robotstxt(domain = "https://theguardian.com")
 
-# get list of permissions into a dataframe
+
+# exercise 2 --------------------------------------------------------------
+
+# get list of permissions
 robotstxt(domain = "https://theguardian.com")$permissions
 
 # check a path such that it will return FALSE
 paths_allowed(domain = "https://theguardian.com", paths = "/sendarticle/")
 
 
-# exercises 6-7 -----------------------------------------------------------
+# exercise 3 --------------------------------------------------------------
 
-<!DOCTYPE html>
-<html>
-<body>
-        
-<h1>States of Luzland</h1>
-        
-<p>There are <b>four states</b> in Luzland, each divided into <b>25 parliamentary constituencies</b>. Click on the links below to see the list of constituencies in each state.</p>
-        
-<ul>
-<li><a href="https://luzpar.netlify.app/states/east-luzland/" title="East Luzland State">East Luzland</a></li>
-<li><a href="https://luzpar.netlify.app/states/north-luzland/" title="North Luzland State">North Luzland</a></li>
-<li><a href="https://luzpar.netlify.app/states/south-luzland/" title="South Luzland State">South Luzland</a></li>
-<li><a href="https://luzpar.netlify.app/states/west-luzland/" title="West Luzland State"> West Luzland</a></li>
-</ul>
-        
-</body>
-</html>
+# check a website that *i* might wish to scrape for reseach
+robotstxt(domain = "https://www.parliament.uk/")$permissions
 
-# exercise 9 on slide 99 --------------------------------------------------
+
+# exercise 6 --------------------------------------------------------------
+
+# rhtml file available to download at:
+# https://luzpar.netlify.app/exercises/exercise_6.Rhtml
+
+
+# exercise 7 --------------------------------------------------------------
+
+# rhtml file available to download at:
+# https://luzpar.netlify.app/exercises/exercise_7.Rhtml
+
+# exercise 8 --------------------------------------------------------------
+
+# rhtml file available to download at:
+# https://luzpar.netlify.app/exercises/exercise_8.Rhtml
+
+
+# exercise 9 --------------------------------------------------------------
 
 the_page <- bow(url = "https://luzpar.netlify.app/members/") %>%
         scrape()
@@ -75,8 +90,9 @@ df <- data.frame(
 )
 
 
-# exercise 10 on slide 110 ------------------------------------------------
-# note: the code below creates the csv file available at:
+# exercise 10 -------------------------------------------------------------
+
+# note that the code below creates the csv file available at:
 # https://luzpar.netlify.app/exercises/static_data.csv
 
 # scrape the /members/ section for links to personal pages
@@ -118,7 +134,7 @@ for (i in 1:length(the_links)) {
                 "email" = the_page %>% html_elements("#email a") %>% html_text(),
                 "phone" = the_page %>% html_elements("#phone span") %>% html_text(),
                 "website" = the_page %>% html_elements("#website a") %>% html_attr("href"),
-                "preference" = the_page %>% html_elements("#contact-preference") %>% html_text(),
+                "preference" = the_page %>% html_elements("#contact-preference") %>% html_text()
                 
         )
         
@@ -128,28 +144,149 @@ for (i in 1:length(the_links)) {
 }
 
 # flatten the list and save the data in a csv file
+df_mps <- as_tibble(do.call(rbind, temp_list)) 
 
-as_tibble(do.call(rbind, temp_list)) %>% 
-        write.csv("static_data.csv", row.names = FALSE)
-
-
-# selenium additional elements --------------------------------------------
-# these are additional to the stuff on the slides
-
-# try searching -----------------------------------------------------------
-
-search_box <- browser$findElement(using = "css", value = "#sbox")
-search_box$clickElement()
-search_box$sendKeysToElement(list("Luzland", key = "enter"))
-
-search_box <- browser$findElement(using = "css", value = "body > div.container-fluid > div > div.col-sm-4 > form")
-search_box$clickElement()
+# view and (optionally) print it
+View(df_mps)
+write.csv(df_mps, "static_data.csv", row.names = FALSE)
 
 
-# try years ---------------------------------------------------------------
+# exercise 11 -------------------------------------------------------------
 
-year_box <- browser$findElement(using = "css", value = "#yrange > div > div:nth-child(1) > label > input[type=checkbox]")
+# start a server
+driver <- rsDriver(chromever = "98.0.4758.102")
+
+# single out the client (browser)
+browser <- driver$client
+
+# navigate to the page
+browser$navigate(url = "https://luzpar.netlify.app/constituencies/")
+
+# get the source code
+browser$getPageSource()[[1]] %>% 
+        read_html()
+        
+
+# exercise 12 -------------------------------------------------------------
+
+# see the available methods
+# by typing the following into your console (without the number sign):
+# browser$
+
+# read the description for two methods
+browser$acceptAlert
+browser$getTitle
+
+# exercise 13 -------------------------------------------------------------
+
+# get the title of the current page
+browser$getTitle()
+
+# take a screenshot of the page and view it in rstudio
+browser$screenshot(display = TRUE, useViewer = TRUE)
+
+# exercise 14 -------------------------------------------------------------
+
+# navigate to the website
+browser$navigate(url = "https://duckduckgo.com/")
+
+# find the bar
+the_bar <- browser$findElement(using = "css", value = "#search_form_input_homepage")
+
+# check if you really found it
+the_bar$highlightElement()
+
+# click on it
+the_bar$clickElement()
+
+# conduct a search
+the_bar$sendKeysToElement(list("Luzland", key = "enter"))
+
+# exercise 15 -------------------------------------------------------------
+
+# find the body
+the_body <- browser$findElement(using = "css", value = "body")
+
+# scroll down
+the_body$sendKeysToElement(list(key = "page_down"))
+
+# scroll up
+the_body$sendKeysToElement(list(key = "page_up"))
+
+# exercise 16 -------------------------------------------------------------
+
+# go back
+browser$goBack()
+
+# try to conduct a new search
+# note that this won't work
+the_bar$sendKeysToElement(list("Lucerne", key = "enter"))
+
+# find the bar again, and click on it
+the_bar <- browser$findElement(using = "css", value = "#search_form_input_homepage")
+the_bar$clickElement()
+
+# conduct a new search now
+the_bar$sendKeysToElement(list("Lucerne", key = "enter"))
+
+# exercise 17 -------------------------------------------------------------
+
+# navigate to the desired page and wait a little
+browser$navigate("https://luzpar.netlify.app/documents/")
+Sys.sleep(4)
+
+# switch to the frame with the app
+app_frame <- browser$findElement("css", "iframe")
+browser$switchToFrame(Id = app_frame)
+
+# find and open the drop down menu
+drop_down <- browser$findElement(using = "css", value = ".bs-placeholder")
+drop_down$clickElement()
+
+# choose document type: law
+report <- browser$findElement(using = 'css', "[id='bs-select-1-2']")
+report$clickElement()
+
+# choose document type: proposal
+proposal <- browser$findElement(using = 'css', "[id='bs-select-1-1']")
+proposal$clickElement()
+
+# close the drop down menu
+drop_down$clickElement()
+
+# find and un-check year: 2019
+year_box <- browser$findElement(using = "css", value = "#yrange > div > div:nth-child(3) > label > input[type=checkbox]")
 year_box$clickElement()
 
-year_box <- browser$findElement(using = "css", value = "#yrange > div > div:nth-child(2) > label > input[type=checkbox]")
-year_box$clickElement()
+# get the page source and separate the links
+the_links <- browser$getPageSource()[[1]] %>% 
+        read_html() %>% 
+        html_elements("td a") %>% 
+        html_attr("href")
+
+# create an empty list to be filled
+temp_list <- list()
+
+# write a loop
+for (i in 1:length(the_links)) {
+        
+        the_page <- bow(url = the_links[i]) %>%
+                scrape()
+        
+        
+        # create a temporary tibble with information from each page        
+        temp_tibble <- tibble(
+                
+                "tags" = the_page %>% html_elements(".article-categories") %>% html_text(),
+                "credits" = the_page %>% html_elements(".article-header-caption a") %>% html_text()
+                
+        )
+        
+        # add data from each iteration to the list        
+        temp_list[[i]] <- temp_tibble
+        
+}
+
+# flatten the list and print it in the console
+as_tibble(do.call(rbind, temp_list))
+
