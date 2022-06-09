@@ -1,10 +1,20 @@
 # note --------------------------------------------------------------------
 
-# this script provides the solutions to exercises, or links to them,
-# for the workshop (https://github.com/resulumit/scrp_workshop) on 
-# web scraping with r, by resul umit
+# this script provides:
 
-# last updated on: 2022-06-09
+# (a) the solutions to exercises, or links to them, for the workshop on 
+# web scraping with r (starting at line 15), and
+
+# (b) a web-scraping demonstration on regjeringen.no (starting at line 445)
+
+
+# by resul umit
+# last updated on 2022-06-09
+
+
+################################################################################
+# solutions to exercises                                                       #
+################################################################################
 
 
 # load the packages -------------------------------------------------------
@@ -18,17 +28,17 @@ library(dplyr)
 
 # exercise 1 --------------------------------------------------------------
 
-# get the protocol for the guardian via R
-robotstxt(domain = "https://theguardian.com")
+# get the protocol for the dfo website via R
+robotstxt(domain = "https://dfo.no")
 
 
 # exercise 2 --------------------------------------------------------------
 
 # get list of permissions
-robotstxt(domain = "https://theguardian.com")$permissions
+robotstxt(domain = "https://dfo.no")$permissions
 
 # check a path such that it will return FALSE
-paths_allowed(domain = "https://theguardian.com", paths = "/sendarticle/")
+paths_allowed(domain = "https://dfo.no", paths = "/profiles/")
 
 
 # exercise 3 --------------------------------------------------------------
@@ -70,34 +80,34 @@ bow(url = "https://luzpar.netlify.app/states/",
 
 # exercise 11 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/states/") %>%
+bow(url = "https://luzpar.netlify.app/states/") %>%
         scrape() %>% 
         html_element(css = "#top > div.page-body > div:nth-child(2) > div > div.col-lg-12 > div > ul > li:nth-child(1) > a")
             
 # exercise 12 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/states/") %>%
+bow(url = "https://luzpar.netlify.app/states/") %>%
         scrape() %>% 
         html_elements(css = ".article-style a")
 
 
 # exercise 13 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/states/") %>%
+bow(url = "https://luzpar.netlify.app/states/") %>%
         scrape() %>% 
         html_elements(css = ".article-style li:nth-child(3) a , .article-style li:nth-child(1) a")
 
 
 # exercise 14 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/states/") %>%
+bow(url = "https://luzpar.netlify.app/states/") %>%
         scrape() %>% 
         html_elements(css = ".article-style a") %>% 
         html_text()
 
 # exercise 15 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/constituencies/") %>%
+bow(url = "https://luzpar.netlify.app/constituencies/") %>%
         scrape() %>% 
         html_elements(css = "h2 a") %>% 
         html_text()
@@ -105,7 +115,7 @@ bow("https://luzpar.netlify.app/constituencies/") %>%
 
 # exercise 16 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/constituencies/") %>%
+bow(url = "https://luzpar.netlify.app/constituencies/") %>%
         scrape() %>% 
         html_elements(css = "h2 a") %>% 
         html_attr(name = "href")
@@ -113,7 +123,7 @@ bow("https://luzpar.netlify.app/constituencies/") %>%
 
 # exercise 17 -------------------------------------------------------------
 
-bow("https://luzpar.netlify.app/constituencies/") %>%
+bow(url = "https://luzpar.netlify.app/constituencies/") %>%
         scrape() %>% 
         html_elements(css = "h2 a") %>% 
         html_attr(name = "href") %>% 
@@ -122,7 +132,7 @@ bow("https://luzpar.netlify.app/constituencies/") %>%
 
 # exercise 18 -------------------------------------------------------------
 
-the_page <- bow("https://luzpar.netlify.app/members/") %>%
+the_page <- bow(url = "https://luzpar.netlify.app/members/") %>%
         scrape()
 
 df <- data.frame(
@@ -163,7 +173,7 @@ df <- data.frame(
 
 # scrape the /members/ section for links to personal pages
 
-the_links <- bow("https://luzpar.netlify.app/members/") %>%
+the_links <- bow(url = "https://luzpar.netlify.app/members/") %>%
         scrape() %>%
         html_elements(css = "td:nth-child(1) a") %>% 
         html_attr("href") %>% 
@@ -233,8 +243,8 @@ browser <- driver$client
 
 # exercise 22 -------------------------------------------------------------
 
-browser$navigate(url = "https://luzpar.netlify.app")
-browser$navigate(url = "https://www.theguardian.com/")
+browser$navigate(url = "https://dfo.no/")
+browser$navigate(url = "https://www.regjeringen.no/")
 
 # exercise 23 -------------------------------------------------------------
 
@@ -333,7 +343,7 @@ the_bar$highlightElement()
 the_bar$clickElement()
 
 # conduct a search
-the_bar$sendKeysToElement(list(value = "Luzland", key = "enter"))
+the_bar$sendKeysToElement(list(value = "Oslo", key = "enter"))
 
 
 # exercise 32 -------------------------------------------------------------
@@ -351,9 +361,8 @@ the_body$sendKeysToElement(list(key = "page_up"))
 # exercise 33 -------------------------------------------------------------
 
 # try to conduct a new search
-# note that this won't work because the bar on this current page has a
-# different selector
-the_bar$sendKeysToElement(list(value = "Lucerne", key = "enter"))
+# note that this won't work
+the_bar$sendKeysToElement(list(value = "Bergen", key = "enter"))
 
 # find the bar again, and click on it
 the_bar <- browser$findElement(using = "css", value = "#search_form_input")
@@ -363,7 +372,7 @@ the_bar$clickElement()
 the_bar$clearElement()
 
 # conduct a new search now
-the_bar$sendKeysToElement(list(value = "Lucerne", key = "enter"))
+the_bar$sendKeysToElement(list(value = "Bergen", key = "enter"))
 
 
 # exercise 34 -------------------------------------------------------------
@@ -427,3 +436,102 @@ for (i in 1:length(the_links)) {
 # flatten the list and print it in the console
 as_tibble(do.call(rbind, temp_list))
 
+
+
+
+
+
+
+################################################################################
+# demonstration: downloading reports and letters from regjeringen.no           #
+################################################################################
+
+# load libraries ----------------------------------------------------------
+
+library(rvest)
+library(tidyverse)
+
+# get the links to 16 ministry-specific pages -----------------------------
+
+first_page <- "https://www.regjeringen.no/no/dokument/tildelingsbrev-og-arsrapportar/id2357472/"
+
+ministry_links <- read_html(first_page) |> 
+        html_elements("#mainContent .link-list a") |> 
+        html_attr("href") |> 
+        url_absolute("https://www.regjeringen.no/")
+
+
+
+# get all hyperlinks ------------------------------------------------------
+
+links_list <- list()
+
+for (i in 1:length(ministry_links)) {
+        
+        the_links <- tibble(
+                
+                text = read_html(ministry_links[i]) |> 
+                        html_elements("a") |> 
+                        html_text(),
+                
+                links = read_html(ministry_links[i]) |> 
+                        html_elements("a") |> 
+                        html_attr("href") |> 
+                        url_absolute("https://www.regjeringen.no/")
+                
+        )
+        
+        links_list[[i]] <- the_links
+}
+
+
+# select reports and letters ----------------------------------------------
+
+report_links <- as_tibble(do.call(rbind, links_list)) |> 
+        filter(str_detect(str_to_lower(text), "årsrapport")) |> 
+        filter(str_detect(str_to_lower(links), "pdf"))
+
+letter_links <- as_tibble(do.call(rbind, links_list)) |> 
+        filter(str_detect(str_to_lower(text), "tildelingsbrev")) |> 
+        filter(str_detect(str_to_lower(links), "pdf"))
+
+
+# download the pdfs -------------------------------------------------------
+
+dir.create("reports")
+
+for (i in 1:length(report_links$links)) {
+        
+        skip_to_next <- FALSE
+        
+        tryCatch(
+                
+                download.file(url = report_links$links[i], 
+                              file.path("reports", basename(report_links$links[i])), mode = "wb"),
+                
+                error = function(e) { skip_to_next <<- TRUE}
+                
+        )
+        
+        if(skip_to_next) { next }     
+        
+}
+
+dir.create("letters")
+
+for (i in 1:length(letter_links$links)) {
+        
+        skip_to_next <- FALSE
+        
+        tryCatch(
+                
+                download.file(url = letter_links$links[i], 
+                              file.path("letters", basename(letter_links$links[i])), mode = "wb"),
+                
+                error = function(e) { skip_to_next <<- TRUE}
+                
+        )
+        
+        if(skip_to_next) { next }     
+        
+}
